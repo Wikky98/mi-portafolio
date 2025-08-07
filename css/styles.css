@@ -411,6 +411,12 @@ img {
   transform: translateY(-2px);
 }
 
+.home__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .home__blob {
   width: 200px;
   fill: var(--first-color);
