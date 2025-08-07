@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal - Desarrollador Frontend/Backend">
+    <meta name="keywords" content="desarrollador, programador, frontend, backend, javascript, html, css">
+    <meta name="author" content="">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Mi Portafolio - Desarrollador">
+    <meta property="og:description" content="Portafolio personal de desarrollo web">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mi Portafolio - Desarrollador">
+    <meta name="twitter:description" content="Portafolio personal de desarrollo web">
+    <meta name="twitter:image" content="assets/images/og-image.jpg">
+    
+    <title>Mi Portafolio</title>
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Header con navegación -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <span id="nav-name">JONATHAN</span>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="fas fa-home nav__icon"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="fas fa-user nav__icon"></i>
+                            <span>Sobre mí</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="fas fa-code nav__icon"></i>
+                            <span>Habilidades</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="fas fa-folder-open nav__icon"></i>
+                            <span>Proyectos</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="fas fa-envelope nav__icon"></i>
+                            <span>Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Botón de cierre del menú móvil -->
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <!-- Toggle para menú móvil -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <!-- Toggle para idioma -->
+            <div class="nav__lang" id="lang-toggle">
+                <i class="fas fa-globe"></i>
+            </div>
+            
+            <!-- Toggle para tema oscuro/claro -->
+            <div class="nav__theme" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <div id="social-links">
+                            <!-- Los enlaces sociales se cargan dinámicamente -->
+                        </div>
+                    </div>
+                    
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190,87 C190,134.065 155.065,169 108,169 C60.935,169 26,134.065 26,87 C26,39.935 60.935,5 108,5 C155.065,5 190,39.935 190,87 Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190,87 C190,134.065 155.065,169 108,169 C60.935,169 26,134.065 26,87 C26,39.935 60.935,5 108,5 C155.065,5 190,39.935 190,87 Z"/>
+                                <!-- Reemplazar con tu imagen de perfil -->
+                                <image class="home__blob-img" x="12" y="18" href="assets/images/profile.jpg"/>
+                            </g>
+                        </svg>
+                    </div>
+                    
+                    <div class="home__data">
+                        <h1 class="home__title">Hola, soy <span id="home-name">JONATHAN</span></h1>
+                        <h3 class="home__subtitle" id="home-title">DESARROLLADOR IA</h3>
+                        <p class="home__description" id="home-bio">
+                            Desarrollador en Formación | Entusiasta de IA y Tecnología
+
+                            Explorador tecnológico apasionado por desvelar los misterios de la programación web y la inteligencia artificial. Mi viaje incluye dominar HTML, CSS, JavaScript y Python, con una mirada hacia el futuro digital. Comprometido con el aprendizaje continuo y la innovación tecnológica. 
+                        </p>
+                        
+                        <div class="home__buttons">
+                            <a href="#contact" class="button button--flex">
+                                Contactar <i class="fas fa-paper-plane button__icon"></i>
+                            </a>
+                            <a href="#" class="button button--white button--flex" id="download-cv">
+                                Descargar CV <i class="fas fa-download button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="fas fa-mouse home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="fas fa-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre mí Section -->
+        <section class="about section" id="about">
+            <h2 class="section__title">Sobre mí</h2>
+            <span class="section__subtitle">Mi introducción</span>
+            
+            <div class="about__container container grid">
+                <img src="assets/images/about.jpg" alt="Sobre mí" class="about__img">
+                
+                <div class="about__data">
+                    <p class="about__description" id="about-description">
+                        Mi meta es convertirme en un desarrollador de software especializado en soluciones de inteligencia artificial, combinando mi pasión por la tecnología con mi capacidad de resolver problemas complejos. Busco constantemente proyectos que me permitan aprender y crecer profesionalmente.
+                    </p>
+                    
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title" id="projects-count">00+</span>
+                            <span class="about__info-name">Proyectos<br>completados</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title" id="experience-years">00+</span>
+                            <span class="about__info-name">Años de<br>experiencia</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title" id="clients-count">00+</span>
+                            <span class="about__info-name">Clientes<br>satisfechos</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades Section -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Habilidades</h2>
+            <span class="section__subtitle">Mi nivel técnico</span>
+            
+            <div class="skills__container container grid">
+                <!-- Frontend Skills -->
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class="fas fa-code skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Frontend Developer</h1>
+                            <span class="skills__subtitle">ESTUDIANTE</span>
+                        </div>
+                        <i class="fas fa-angle-down skills__arrow"></i>
+                    </div>
+                    
+                    <div class="skills__list grid">
+                        <div class="skills__data" id="frontend-skills">
+                            <!-- Se cargan dinámicamente desde config.js -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="fas fa-server skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Backend Developer</h1>
+                            <span class="skills__subtitle">ESTUDIANTE</span>
+                        </div>
+                        <i class="fas fa-angle-down skills__arrow"></i>
+                    </div>
+                    
+                    <div class="skills__list grid">
+                        <div class="skills__data" id="backend-skills">
+                            <!-- Se cargan dinámicamente desde config.js -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Technologies -->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="fas fa-tools skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Herramientas</h1>
+                            <span class="skills__subtitle">Uso diario</span>
+                        </div>
+                        <i class="fas fa-angle-down skills__arrow"></i>
+                    </div>
+                    
+                    <div class="skills__list grid">
+                        <div class="skills__data" id="tools-skills">
+                            <!-- Se cargan dinámicamente desde config.js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Section -->
+        <section class="portfolio section" id="projects">
+            <h2 class="section__title">Proyectos</h2>
+            <span class="section__subtitle">Trabajos más recientes</span>
+            
+            <div class="portfolio__container container">
+                <!-- Filter buttons -->
+                <div class="portfolio__filters">
+                    <span class="portfolio__item portfolio__item-active" data-filter="all">Todo</span>
+                    <span class="portfolio__item" data-filter="web">Web</span>
+                    <span class="portfolio__item" data-filter="app">App</span>
+                    <span class="portfolio__item" data-filter="design">Diseño</span>
+                </div>
+                
+                <!-- Projects grid -->
+                <div class="portfolio__content grid" id="projects-container">
+                    <!-- Los proyectos se cargan dinámicamente desde config.js -->
+                    <!-- Placeholder para cuando no hay proyectos -->
+                    <div class="portfolio__empty" id="projects-empty">
+                        <i class="fas fa-folder-open portfolio__empty-icon"></i>
+                        <h3 class="portfolio__empty-title">Próximamente</h3>
+                        <p class="portfolio__empty-description">
+                            Los proyectos se mostrarán aquí una vez que sean agregados.
+                            <br><br>
+                            Para agregar proyectos, edita el archivo <code>js/config.js</code> 
+                            o utiliza el script <code>js/add-project.js</code>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contacto</h2>
+            <span class="section__subtitle">Ponte en contacto</span>
+            
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="fab fa-whatsapp contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">WhatsApp</h3>
+                            <span class="contact__subtitle" id="contact-phone">+5491138607339</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__information">
+                        <i class="fas fa-envelope contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle" id="contact-email">[TU EMAIL]</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__information">
+                        <i class="fas fa-map-marker-alt contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Ubicación</h3>
+                            <span class="contact__subtitle" id="contact-location">[TU UBICACIÓN]</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulario de contacto -->
+                <form action="#" class="contact__form grid" id="contact-form">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="contact-name" class="contact__label">Nombre</label>
+                            <input type="text" id="contact-name" name="name" class="contact__input" required>
+                        </div>
+                        
+                        <div class="contact__content">
+                            <label for="contact-email-input" class="contact__label">Email</label>
+                            <input type="email" id="contact-email-input" name="email" class="contact__input" required>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__content">
+                        <label for="contact-subject" class="contact__label">Asunto</label>
+                        <input type="text" id="contact-subject" name="subject" class="contact__input" required>
+                    </div>
+                    
+                    <div class="contact__content">
+                        <label for="contact-message" class="contact__label">Mensaje</label>
+                        <textarea name="message" id="contact-message" cols="0" rows="7" class="contact__input" required></textarea>
+                    </div>
+                    
+                    <div>
+                        <button type="submit" class="button button--flex">
+                            Enviar Mensaje
+                            <i class="fas fa-paper-plane button__icon"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Mensaje de confirmación -->
+                    <div class="contact__message" id="contact-message-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title" id="footer-name">[TU NOMBRE]</h1>
+                    <span class="footer__subtitle" id="footer-title">[TU TÍTULO]</span>
+                </div>
+                
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">Sobre mí</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contacto</a>
+                    </li>
+                </ul>
+                
+                <div class="footer__socials" id="footer-socials">
+                    <!-- Los enlaces sociales se cargan dinámicamente -->
+                </div>
+            </div>
+            
+            <p class="footer__copy">&#169; <span id="current-year"></span> <span id="footer-copy-name">[TU NOMBRE]</span>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll Up Button -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!-- JavaScript Files -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

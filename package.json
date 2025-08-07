@@ -1,0 +1,48 @@
+{
+  "name": "mi-portafolio",
+  "version": "1.0.0",
+  "description": "Portafolio personal moderno y escalable",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html",
+    "start": "live-server --port=8080 --open=/index.html",
+    "add-project": "node js/add-project.js",
+    "list-projects": "node js/add-project.js list",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "csso css/styles.css --output css/styles.min.css",
+    "minify-js": "terser js/main.js --output js/main.min.js --compress --mangle",
+    "deploy": "gh-pages -d .",
+    "setup": "npm install && echo 'Portfolio setup complete! Run npm run dev to start development server'",
+    "validate": "node -c js/config.js && echo 'Config file is valid'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/[TU-USUARIO]/mi-portafolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "personal",
+    "website",
+    "responsive",
+    "javascript",
+    "html5",
+    "css3"
+  ],
+  "author": "[TU NOMBRE] <[TU EMAIL]>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/[TU-USUARIO]/mi-portafolio/issues"
+  },
+  "homepage": "https://[TU-USUARIO].github.io/mi-portafolio",
+  "devDependencies": {
+    "csso-cli": "^4.0.2",
+    "gh-pages": "^6.1.1",
+    "live-server": "^1.2.2",
+    "terser": "^5.26.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
