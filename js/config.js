@@ -40,7 +40,7 @@ const CONFIG = {
       id: 1,
       title: 'Sistema de Gestión de Empleados - Astrom',
       description: 'Sistema web para gestión de recursos humanos desarrollado como proyecto de aprendizaje Full Stack.',
-      image: 'assets/images/home.jpg',
+      image: 'assets/icons/astrom_profile.svg',
       technologies: ['HTML', 'CSS'],
       github: 'https://github.com/Wikky98/sistema-gestion-empleados-astrom',
       demo: 'https://wikky98.github.io/sistema-gestion-empleados-astrom/',
