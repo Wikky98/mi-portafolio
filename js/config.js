@@ -36,6 +36,16 @@ const CONFIG = {
     //   demo: 'https://demo-proyecto.com',
     //   featured: true
     // }
+    {
+      id: 1,
+      title: 'Sistema de Gestión de Empleados - Astrom',
+      description: 'Sistema web para gestión de recursos humanos desarrollado como proyecto de aprendizaje Full Stack.',
+      image: 'C:\Users\Jonathan\Documents\claude\proyecto-astrom\screenshots\home.jpg',
+      technologies: ['HTML', 'CSS'],
+      github: 'https://github.com/Wikky98/sistema-gestion-empleados-astrom',
+      demo: 'https://wikky98.github.io/sistema-gestion-empleados-astrom/',
+      featured: true
+    }
   ],
 
   skills: {
